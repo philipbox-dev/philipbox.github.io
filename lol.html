@@ -2,11 +2,33 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Music</title>
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main><canvas id="canvas"></canvas>
+      <div id="info">- Загрузка... -</div>
+      <style>
+      html,body{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background: #000;
+      }
+      
+      #info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.4);
+        color: #fff;
+        padding: 20px;
+      }
+    </style>
+    <script src="audio.js"></script>
+
+    </main>
     <footer></footer>
   </body>
 </html>
